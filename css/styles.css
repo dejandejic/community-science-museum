@@ -1,0 +1,843 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/*---Header---*/
+header {
+  background: #516673;
+}
+
+.brand-logo {
+  display: inline-block;
+}
+
+.brand-logo img {
+  width: 80px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 0 1rem;
+}
+
+nav .nav-menu .nav-link {
+  display: block;
+  font-size: 14px;
+  color: white;
+  padding: 8px 16px;
+  transition: color .1s ease-in;
+}
+
+nav .nav-menu .nav-link.active, 
+nav .nav-menu .nav-link:hover {
+  color: #ff8f08;
+}
+
+/* Menu Toggle */
+#menu {
+  visibility: hidden;
+}
+
+.menu{
+  color: #fff;
+  font-size: 24px;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+/* Searchbox */
+.seachbox {
+  padding: 1rem;
+}
+
+.seachbox input {
+  width: 100%;
+  height: 36px;
+  outline: none;
+  padding: 2px 12px;
+  transition: width .25s ease-in;
+}
+
+/* Main */
+
+.heading {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  padding-top: 4rem;
+}
+
+
+/* Home */
+.home,
+.visit-us,
+.get-involved {
+  background-color: #bfb7a8;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  color: white;
+}
+
+.content .box {
+  flex: 1;
+  background-size: cover;
+  background-position: bottom;
+  padding: 1.3rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: flex-grow .6s;
+}
+
+.box-content,
+.read-more {
+  opacity: 0;
+}
+
+.content .box h2 {
+  font-size: 26px;
+}
+
+.content .box .sub-title {
+  margin: 16px 0;
+  line-height: 1.3;
+}
+
+.box.explore {
+  background-image: url(../images/samuel-zeller-158996.jpg);
+}
+
+.box .bg-liner {
+  background:  rgb(49 49 49 / 60%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .2s ease;
+  z-index: 1;
+}
+
+.box:hover {
+  flex-grow: 2.5;
+}
+
+.box-content,
+.read-more {
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.box:hover .bg-liner,
+.box:hover .box-content,
+.box:hover .read-more {
+  opacity: 1;
+}
+
+.box .list p {
+  margin-bottom: 4px;
+}
+
+.box.exhibition {
+  background-image: url(../images/exhibition-1863344_1920.jpg);
+}
+
+.box.special {
+  background-image: url(../images/mammoth-1257288_1920.jpg);
+}
+
+.box.visit {
+  background-image: url(../images/scott-webb-102825.jpg);
+}
+
+.box.involve {
+  background-image: url(../images/luke-ellis-craven-400722.jpg);
+}
+
+.read-more {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.read-more a {
+  display: inline-block;
+  padding: 6px 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 1rem;
+  transition: .15s ease-in;
+}
+
+.read-more a:hover {
+  background: #fcfcfc;
+  color: #000;
+}
+
+.content .box h2,
+.content .box p,
+.read-more {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* experience */
+
+.experience-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 6rem;
+}
+
+.experience-box {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px rgb(108 100 100);
+    cursor: pointer;
+}
+
+.experience-box + .experience-box {
+  margin-top: 3rem;
+}
+
+.experience-box .comment {
+  padding-left: 1rem;
+}
+
+.visiter {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.visiter img {
+  width: 50px;
+}
+
+.visiter i,
+.visiter small {
+  color: blue;
+}
+
+/*============= Explore Page ============*/
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+section .container .heading {
+  font-size: 36px;
+  color: #000;
+  padding-bottom: 3rem;
+}
+
+.explore-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 3rem;
+  padding-bottom: 5rem;
+}
+
+ /* Expplore */
+ .explore-box .info {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.explore-box .info.pl {
+  padding-right: 0;
+}
+
+.image-box.order {
+  order: 1;
+}
+
+.explore-box .info h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.explore-box .info p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.explore-box .image-box {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+}
+
+.explore-box .image-box img {
+  width: 100%;
+}
+
+section.kids {
+  background: #bfb6ae;
+}
+
+section.teachers,
+section.teachers h1 {
+  background: #516673;
+  color: white;
+}
+
+section.researchers {
+  background: #d9adad;
+}
+
+/*----Exhibition Spaces Page----*/
+.banners {
+  position: relative;
+  height: calc(100vh - 84px);
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.banner-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4rem;
+  max-width: 700px;
+  padding: 2rem;
+  color: white;
+  /* animation: text-zoom-out 3s linear infinite; */
+}
+
+@keyframes text-zoom-out {
+  from {
+    transform: scale(.8);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.banner-info h1 {
+  font-size: 2.5rem;
+}
+
+.banner-info p {
+  line-height: 1.5;
+}
+
+.banner-info span {
+  background: yellowgreen;
+  height: 4px;
+  width: 100px;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.banner1 {
+  animation: slide1 12s linear infinite;
+}
+.banner2 {
+  animation: slide2 12s linear infinite;
+}
+.banner3 {
+  animation: slide3 12s linear infinite;
+}
+.banner4 {
+  animation: slide4 12s linear infinite;
+}
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide4 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+/* Events and Exhibitions */
+
+.events-container {
+  max-width: 1200px;
+  margin: auto;
+  /* padding: 0 2rem; */
+}
+
+.events-container .heading {
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: #ff8f08;
+}
+
+.events-list {
+  padding: 0 2rem;
+  padding-top: 1rem;
+}
+
+.events-list .event-box {
+  padding: 2rem 0;
+}
+
+.events-list .event-content {
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+}
+
+.event-content .event-left {
+  background: #516673;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+.event-content .event-left .date {
+  font-size: 56px;
+}
+.event-content .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+.event-content .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+.event-content .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #ff8f08;
+  text-transform: uppercase;
+}
+.event-content .event-right .event-timing {
+  background: #516673;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+.event-timing {
+  color: white;
+  cursor: pointer;
+}
+
+.event-timing i {
+  margin-right: .5rem;
+}
+.event-timing:hover {
+  color: #ff8f08;
+}
+.event-date:hover {
+  color: #ff8f08;
+}
+
+/* Visit Us */
+.visit-container {
+  max-width: 1200px;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.visit-us .heading {
+  color: black;
+  font-size: 20px;
+}
+
+.visit-container .opening-hours,
+.visit-container .contact {
+  width: 100%;
+}
+
+.visit-container h3 {
+  margin: 1rem 0;
+}
+
+.visit-container i {
+  font-size: 20px;
+  color: green;
+  margin: 10px;
+}
+
+.opening-hours i {
+  margin-left: 0;
+}
+
+.about-us {
+  padding: 2rem 0;
+}
+
+.about-us h2 {
+  padding-bottom: 6px;
+}
+
+.about-us  p {
+  padding-bottom: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 70px;
+  padding-top: 10px;
+}
+
+.social-media a {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s ease-in;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.social-media i {
+  color: #516673;
+}
+
+/* Get Involve */
+
+.getInvolve-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.card {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.card-content {
+  height: 100%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: .25s ease;
+  
+}
+
+.card-content:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.card-content img {
+  width: 80px;
+}
+
+.card-content h2 {
+  font-size: 30px;
+  padding: 1rem 0;
+}
+
+.card-content .comment {
+  line-height: 1.5;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-menu {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-menu .footer-nav {
+  width: 50%;
+}
+
+.footer-menu strong {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.footer-menu .nav-link {
+  display: inline-block;
+  padding: 4px 0;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.footer-menu .nav-link:hover {
+  color: #ff8f08;
+}
+
+
+
+/* Responsive Media Queries */
+
+@media screen and (max-width:767px){
+  .navbar {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    z-index: 100;
+    background: #516673;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform .2s ease;
+  }
+
+  #menu:checked ~ .navbar {
+    transform: translateX(0);
+  }
+
+  /* Home Page */
+  .content .box {
+    margin-bottom: 2rem;
+  }
+
+  /* Events */
+  .events-list .event-content {
+    flex-direction: column;
+  }
+  
+  .event-content .event-left {
+    border-radius: 8px 8px 0 0;
+  }
+
+  /* Get Involve */
+  .getInvolve-container {
+    flex-wrap: wrap;
+  }  
+  
+  /* Footer */
+  .footer-menu {
+    padding-bottom: 0;
+  }
+  .footer-menu .footer-nav {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  nav {
+    padding: 0 2rem;
+  }
+
+  nav .nav-menu {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  nav .nav-menu .nav-link {
+    font-size: 18px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .seachbox {
+    padding-right: 2rem;
+  }
+
+  .seachbox input {
+    width: 200px;
+  }
+
+  .seachbox input:focus {
+    width: 250px;
+  }
+
+  /* Content */
+  .content { 
+    display: flex;
+    height: 400px;
+    margin-top: 3rem;
+    padding: 0;
+    /* padding-top: 2rem; */
+  }
+
+  /* Experience */
+  .experience-container {
+    display: flex;
+    padding: 6rem 0;
+  }
+
+  .experience-box + .experience-box {
+    margin-top: 0rem;
+    margin-left: 3rem;
+  }
+
+   /* Expplore */
+  .explore-box .info {
+    width:60%;
+    padding-right: 3rem;
+    padding-bottom: 0;
+  }
+
+  .explore-box .info.pl {
+    padding-left: 3rem;
+  }
+
+  .explore-box .image-box {
+    width: 40%; 
+  }
+
+  /* Get Involve */
+  .card {
+    flex: 1; 
+  }
+
+  /* Visit Us */
+  .visit-container .opening-hours, 
+  .visit-container .contact {
+    width: 50%;
+  }
+
+  /* FOOTER */
+  .footer-menu {
+    padding: 3rem 1rem;
+  }
+  
+  .footer-menu .footer-nav {
+    width: 25%;
+  }
+}
+
