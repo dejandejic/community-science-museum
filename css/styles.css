@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -15,7 +15,6 @@ a {
 ul {
   list-style: none;
 }
-
 
 /*---Header---*/
 header {
@@ -44,10 +43,10 @@ nav .nav-menu .nav-link {
   font-size: 14px;
   color: white;
   padding: 8px 16px;
-  transition: color .1s ease-in;
+  transition: color 0.1s ease-in;
 }
 
-nav .nav-menu .nav-link.active, 
+nav .nav-menu .nav-link.active,
 nav .nav-menu .nav-link:hover {
   color: #ff8f08;
 }
@@ -57,10 +56,10 @@ nav .nav-menu .nav-link:hover {
   visibility: hidden;
 }
 
-.menu{
+.menu {
   color: #fff;
   font-size: 24px;
-  transition: .2s ease;
+  transition: 0.2s ease;
   cursor: pointer;
 }
 
@@ -74,7 +73,7 @@ nav .nav-menu .nav-link:hover {
   height: 36px;
   outline: none;
   padding: 2px 12px;
-  transition: width .25s ease-in;
+  transition: width 0.25s ease-in;
 }
 
 /* Main */
@@ -85,7 +84,6 @@ nav .nav-menu .nav-link:hover {
   padding: 2rem 0;
   padding-top: 4rem;
 }
-
 
 /* Home */
 .home,
@@ -111,7 +109,7 @@ nav .nav-menu .nav-link:hover {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  transition: flex-grow .6s;
+  transition: flex-grow 0.6s;
 }
 
 .box-content,
@@ -133,14 +131,14 @@ nav .nav-menu .nav-link:hover {
 }
 
 .box .bg-liner {
-  background:  rgb(49 49 49 / 60%);
+  background: rgb(49 49 49 / 60%);
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: .2s ease;
+  transition: 0.2s ease;
   z-index: 1;
 }
 
@@ -151,7 +149,7 @@ nav .nav-menu .nav-link:hover {
 .box-content,
 .read-more {
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 
 .box:hover .bg-liner,
@@ -193,7 +191,7 @@ nav .nav-menu .nav-link:hover {
   font-size: 15px;
   color: #fff;
   margin-top: 1rem;
-  transition: .15s ease-in;
+  transition: 0.15s ease-in;
 }
 
 .read-more a:hover {
@@ -207,7 +205,6 @@ nav .nav-menu .nav-link:hover {
   position: relative;
   z-index: 2;
 }
-
 
 /* experience */
 
@@ -223,7 +220,7 @@ nav .nav-menu .nav-link:hover {
   padding: 1.5rem;
   border-radius: 5px;
   box-shadow: 0 10px 20px 3px rgb(108 100 100);
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .experience-box + .experience-box {
@@ -246,7 +243,7 @@ nav .nav-menu .nav-link:hover {
 
 .visiter i,
 .visiter small {
-  color: blue;
+  color: #05aff2;
 }
 
 /*============= Explore Page ============*/
@@ -270,8 +267,8 @@ section .container .heading {
   padding-bottom: 5rem;
 }
 
- /* Expplore */
- .explore-box .info {
+/* Expplore */
+.explore-box .info {
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -299,7 +296,8 @@ section .container .heading {
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px,
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px;
 }
 
 .explore-box .image-box img {
@@ -365,7 +363,7 @@ section.researchers {
 
 @keyframes text-zoom-out {
   from {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   to {
     transform: scale(1.1);
@@ -494,7 +492,8 @@ section.researchers {
 
 .events-list .event-content {
   display: flex;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 8px;
 }
 
@@ -546,7 +545,7 @@ section.researchers {
 }
 
 .event-timing i {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .event-timing:hover {
   color: #ff8f08;
@@ -558,7 +557,7 @@ section.researchers {
 /* Visit Us */
 .visit-container {
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -597,7 +596,7 @@ section.researchers {
   padding-bottom: 6px;
 }
 
-.about-us  p {
+.about-us p {
   padding-bottom: 1rem;
 }
 
@@ -618,8 +617,9 @@ section.researchers {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .2s ease-in;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.2s ease-in;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .social-media i {
@@ -645,13 +645,13 @@ section.researchers {
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
-  transition: .25s ease;
-  
+  transition: 0.25s ease;
 }
 
 .card-content:hover {
   transform: translateY(-10px);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .card-content img {
@@ -701,11 +701,9 @@ footer {
   color: #ff8f08;
 }
 
-
-
 /* Responsive Media Queries */
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   .navbar {
     position: absolute;
     top: 84px;
@@ -714,7 +712,7 @@ footer {
     background: #516673;
     width: 100%;
     transform: translateX(-100%);
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
   }
 
   #menu:checked ~ .navbar {
@@ -730,7 +728,7 @@ footer {
   .events-list .event-content {
     flex-direction: column;
   }
-  
+
   .event-content .event-left {
     border-radius: 8px 8px 0 0;
   }
@@ -738,8 +736,8 @@ footer {
   /* Get Involve */
   .getInvolve-container {
     flex-wrap: wrap;
-  }  
-  
+  }
+
   /* Footer */
   .footer-menu {
     padding-bottom: 0;
@@ -749,7 +747,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   nav {
     padding: 0 2rem;
   }
@@ -786,7 +784,7 @@ footer {
   }
 
   /* Content */
-  .content { 
+  .content {
     display: flex;
     height: 400px;
     margin-top: 3rem;
@@ -805,9 +803,9 @@ footer {
     margin-left: 3rem;
   }
 
-   /* Expplore */
+  /* Expplore */
   .explore-box .info {
-    width:60%;
+    width: 60%;
     padding-right: 3rem;
     padding-bottom: 0;
   }
@@ -817,16 +815,16 @@ footer {
   }
 
   .explore-box .image-box {
-    width: 40%; 
+    width: 40%;
   }
 
   /* Get Involve */
   .card {
-    flex: 1; 
+    flex: 1;
   }
 
   /* Visit Us */
-  .visit-container .opening-hours, 
+  .visit-container .opening-hours,
   .visit-container .contact {
     width: 50%;
   }
@@ -835,9 +833,8 @@ footer {
   .footer-menu {
     padding: 3rem 1rem;
   }
-  
+
   .footer-menu .footer-nav {
     width: 25%;
   }
 }
-
