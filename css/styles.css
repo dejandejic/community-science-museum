@@ -566,7 +566,7 @@ section.researchers {
 }
 
 .visit-us .heading {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
@@ -581,7 +581,7 @@ section.researchers {
 
 .visit-container i {
   font-size: 20px;
-  color: green;
+  color: white;
   margin: 10px;
 }
 
@@ -618,13 +618,10 @@ section.researchers {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.2s ease-in;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .social-media i {
-  color: #516673;
+  color: white;
 }
 
 /* Get Involved */
@@ -702,7 +699,7 @@ footer {
   color: #ff8f08;
 }
 
-/* Responsive Media Queries */
+/* Media Queries */
 
 @media screen and (max-width: 767px) {
   .navbar {
