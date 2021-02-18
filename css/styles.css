@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", "Montserrat", sans-serif;
 }
 
 a {
@@ -239,6 +239,7 @@ nav .nav-menu .nav-link:hover {
 
 .visiter img {
   width: 50px;
+  border-radius: 50%;
 }
 
 .visiter i,
@@ -246,7 +247,7 @@ nav .nav-menu .nav-link:hover {
   color: #05aff2;
 }
 
-/*============= Explore Page ============*/
+/*-----Explore Page-----*/
 
 .container {
   max-width: 1200px;
@@ -626,9 +627,9 @@ section.researchers {
   color: #516673;
 }
 
-/* Get Involve */
+/* Get Involved */
 
-.getInvolve-container {
+.getInvolved-container {
   display: flex;
   max-width: 1200px;
   margin: auto;
