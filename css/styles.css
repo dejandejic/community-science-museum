@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Poppins", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -79,10 +79,11 @@ nav .nav-menu .nav-link:hover {
 /* Main */
 
 .heading {
-  color: #fff;
+  color: #516673;
   text-align: center;
   padding: 2rem 0;
   padding-top: 4rem;
+  letter-spacing: 5px;
 }
 
 /* Home */
@@ -255,9 +256,11 @@ nav .nav-menu .nav-link:hover {
 }
 
 section .container .heading {
-  font-size: 36px;
-  color: #000;
-  padding-bottom: 3rem;
+  color: #516673;
+  text-align: center;
+  padding: 2rem 0;
+  padding-top: 4rem;
+  letter-spacing: 5px;
 }
 
 .explore-box {
@@ -267,8 +270,6 @@ section .container .heading {
   padding: 0 3rem;
   padding-bottom: 5rem;
 }
-
-/* Expplore */
 .explore-box .info {
   width: 100%;
   padding-bottom: 2rem;
@@ -316,7 +317,10 @@ section.teachers h1 {
 }
 
 section.researchers {
-  background: #d9adad;
+  background: #bfb6ae;
+}
+section.researchers p {
+  color: black;
 }
 
 /*----Exhibition Spaces Page----*/
@@ -359,6 +363,7 @@ section.researchers {
   max-width: 700px;
   padding: 2rem;
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   /* animation: text-zoom-out 3s linear infinite; */
 }
 
@@ -380,7 +385,7 @@ section.researchers {
 }
 
 .banner-info span {
-  background: yellowgreen;
+  background: #516673;
   height: 4px;
   width: 100px;
   display: inline-block;
@@ -479,7 +484,7 @@ section.researchers {
 .events-container .heading {
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
-  color: #ff8f08;
+  color: #516673;
 }
 
 .events-list {
@@ -526,7 +531,7 @@ section.researchers {
 .event-content .event-right h3.event-title {
   font-size: 24px;
   margin: 24px 0 10px 0;
-  color: #ff8f08;
+  color: #516673;
   text-transform: uppercase;
 }
 .event-content .event-right .event-timing {
@@ -566,8 +571,11 @@ section.researchers {
 }
 
 .visit-us .heading {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+  color: #516673;
+  text-align: center;
+  padding: 2rem 0;
+  padding-top: 4rem;
+  letter-spacing: 5px;
 }
 
 .visit-container .opening-hours,
@@ -581,7 +589,7 @@ section.researchers {
 
 .visit-container i {
   font-size: 20px;
-  color: white;
+  color: #516673;
   margin: 10px;
 }
 
@@ -621,7 +629,7 @@ section.researchers {
 }
 
 .social-media i {
-  color: white;
+  color: #516673;
 }
 
 /* Get Involved */
@@ -731,7 +739,7 @@ footer {
     border-radius: 8px 8px 0 0;
   }
 
-  /* Get Involve */
+  /* Get Involved */
   .getInvolved-container {
     flex-wrap: wrap;
   }
