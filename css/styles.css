@@ -774,6 +774,7 @@ footer {
 
   .seachbox {
     padding-right: 2rem;
+    display: none;
   }
 
   .seachbox input {
