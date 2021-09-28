@@ -60,7 +60,7 @@ nav .nav-menu .nav-link:hover {
   display: none;
 }
 
-/* Searchbox */
+/* Searchbox 
 .seachbox {
   padding: 1rem;
 }
@@ -72,6 +72,7 @@ nav .nav-menu .nav-link:hover {
   padding: 2px 12px;
   transition: width 0.25s ease-in;
 }
+*/
 
 /* Main */
 
@@ -708,18 +709,16 @@ footer {
   .navbar {
     position: absolute;
     top: 84px;
-    left: 0;
+    left: -100%;
     z-index: 100;
     background: #516673;
     width: 100%;
-    transform: translateX(-100%);
-    transition: transform 0.2s ease;
+    transition: all ease 500ms;
   }
 
-  #menu:checked ~ .navbar {
-    transform: translateX(0);
+  #navbar.menu-toogle {
+    left: 0px;
   }
-
   /* Home Page */
   .content .box {
     margin-bottom: 2rem;
