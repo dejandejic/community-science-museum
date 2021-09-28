@@ -59,6 +59,9 @@ nav .nav-menu .nav-link:hover {
   padding: 0.5rem 1.5rem;
   display: none;
 }
+.menu i {
+  color: white;
+}
 
 /* Searchbox 
 .seachbox {
@@ -716,7 +719,7 @@ footer {
     transition: all ease 500ms;
   }
 
-  #navbar.menu-toogle {
+  .menu-toggle#navbar {
     left: 0px;
   }
   /* Home Page */
