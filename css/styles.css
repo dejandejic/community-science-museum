@@ -48,19 +48,16 @@ nav .nav-menu .nav-link {
 
 nav .nav-menu .nav-link.active,
 nav .nav-menu .nav-link:hover {
-  color: #ff8f08;
+  color: #b8ffac;
 }
 
 /* Menu Toggle */
-#menu {
-  visibility: hidden;
-}
 
-.menu {
-  color: #fff;
-  font-size: 24px;
-  transition: 0.2s ease;
+#menu {
+  font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  display: none;
 }
 
 /* Searchbox */
@@ -552,10 +549,10 @@ section.researchers p {
   margin-right: 0.5rem;
 }
 .event-timing:hover {
-  color: #ff8f08;
+  color: #b8ffac;
 }
 .event-date:hover {
-  color: #ff8f08;
+  color: #b8ffac;
 }
 
 /* Visit Us */
